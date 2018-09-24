@@ -1,0 +1,17 @@
+﻿@model IEnumerable<proyectowebDemo.Models.Department>
+ 
+<br />
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#EmployeeTab">Employee</a></li>
+    <li><a data-toggle="tab" href="#DepartmentTab">Department</a></li>
+    <li><a data-toggle="tab" href="#CategoryTab">Category</a></li>
+    <li><a data-toggle="tab" href="#ReportsTab">Reports</a></li>
+</ul>
+<div class="tab-content">
+    <div id="EmployeeTab" class="tab-pane fade in "> @Html.Action("ViewEmployees", "Employee")</div>
+    <div id="DepartmentTab" class="tab-pane fade in active"> @Html.Action("ViewDepartments", "Department")</div>
+    <div id="CategoryTab" class="tab-pane fade in"> Category</div>
+    <div id="ReportsTab" class="tab-pane fade in"> Reports</div>
+</div>
+

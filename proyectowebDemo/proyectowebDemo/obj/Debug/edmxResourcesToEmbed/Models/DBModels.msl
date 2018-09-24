@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CRUDDBModelStoreContainer" CdmEntityContainer="BDModel">
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="CRUDDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="CRUDDBModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="CRUDDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="delete_category" FunctionName="CRUDDBModel.Store.delete_category" />
+    <FunctionImportMapping FunctionImportName="delete_department" FunctionName="CRUDDBModel.Store.delete_department" />
+    <FunctionImportMapping FunctionImportName="delete_employee" FunctionName="CRUDDBModel.Store.delete_employee" />
+    <FunctionImportMapping FunctionImportName="insert_category" FunctionName="CRUDDBModel.Store.insert_category" />
+    <FunctionImportMapping FunctionImportName="insert_department" FunctionName="CRUDDBModel.Store.insert_department" />
+    <FunctionImportMapping FunctionImportName="insert_employee" FunctionName="CRUDDBModel.Store.insert_employee" />
+    <FunctionImportMapping FunctionImportName="select_category" FunctionName="CRUDDBModel.Store.select_category">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRUDDBModel.select_category_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="select_category_by_id" FunctionName="CRUDDBModel.Store.select_category_by_id">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRUDDBModel.select_category_by_id_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="select_department" FunctionName="CRUDDBModel.Store.select_department">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRUDDBModel.select_department_Result">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="select_department_by_id" FunctionName="CRUDDBModel.Store.select_department_by_id">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRUDDBModel.select_department_by_id_Result">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="select_employee" FunctionName="CRUDDBModel.Store.select_employee">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRUDDBModel.select_employee_Result">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="select_employee_by_id" FunctionName="CRUDDBModel.Store.select_employee_by_id">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRUDDBModel.select_employee_by_id_Result">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="update_category" FunctionName="CRUDDBModel.Store.update_category" />
+    <FunctionImportMapping FunctionImportName="update_department" FunctionName="CRUDDBModel.Store.update_department" />
+    <FunctionImportMapping FunctionImportName="update_employee" FunctionName="CRUDDBModel.Store.update_employee" />
+  </EntityContainerMapping>
+</Mapping>
